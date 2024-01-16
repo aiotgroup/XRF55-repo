@@ -1,87 +1,41 @@
-# Wi-Fi Hardware Tutorial
+# Kinect Hardware Tutorial
 
 ## Hardware preparation
 
-- Recommended computer equipment: ThinkPad X201
-- Be sure to use an Intel 5300 NIC.
+![Azure Kinect DK](https://learn.microsoft.com/zh-cn/azure/kinect-dk/media/index/device-image.jpg)
 
-## Setup Linux 802.11n CSI Tool
+You can find Microsoft Azure Kinect purchase links, hardware parameters, and development tutorials at this link: https://learn.microsoft.com/en-us/azure/kinect-dk/
 
-Reference Links:https://dhalperi.github.io/linux-80211n-csitool/
+## Install Azure Kinect Sensor SDK
 
-## Customize data collection
+The Sensor SDK has the following features that work once installed and run on the Azure Kinect DK:
 
-Before proceeding, please make sure that the CSI tool has been installed successfully and is running smoothly during the demonstration demo.
+- Depth camera access and mode control (a passive IR mode, plus wide and narrow field-of-view depth modes)
+- RGB camera access and control (for example, exposure and white balance)
+- Motion sensor (gyroscope and accelerometer) access
+- Synchronized Depth-RGB camera streaming with configurable delay between cameras
+- External device synchronization control with configurable delay offset between devices
+- Camera frame meta-data access for image resolution, timestamp, etc.
+- Device calibration data access
 
-### Change of transmit frequency
+To learn more about Azure Kinect Sensor SDK, see [Using Sensor SDK](https://learn.microsoft.com/en-us/azure/kinect-dk/about-sensor-sdk).
 
-linux-80211n-csitool-supplementary/injection/random_packets in the csi-tool project.
+In our project, we use the SDK to get the RGB, Depth and IR information of the corresponding video.
 
-In our project use :
+## Get the original .mkv video
 
-```bash
-linux-80211n-csitool-supplementary/injection/random_packets 1000000000 100 1 5000
-```
+1. You can use the officially provided recording process, the main environment is C++. https://learn.microsoft.com/en-us/azure/kinect-dk/record-sensor-streams-file
+2. We also recommend using the recording solution given by open3d, tutorial link: https://www.open3d.org/docs/release/tutorial/sensor/azure_kinect.html
 
-where the first parameter is the cumulative number of packets sent, the second parameter is the size of the packet, the third parameter 1 represents the injection MAC, and the last parameter represents the packets sent every 5,000 microseconds, i.e., 200 packets a second (frequency).
+We use the second method to record, in their project, `azure_kinect_mkv_reader.py` only records .mkv video; `azure_kinect_viewer.py` is only used for displaying; `azure_kinect_mkv_reader.py` not only saves .mkv video, but also saves rgb and depth images, but it's not recommended, as the processing time is too slow, far from the 25 fps requirement.
 
-### Customize the number of transmitter antennas
+![image-20240116173431240](./assets/kinect_view.png)
 
-In our project use :
+## Get RGB and Depth images from .mkv video
 
-```bash
-sudo echo 0x4101 | sudo tee /sys/kernel/debug/ieee80211/phy0/iwlwifi/iwldvm/debug/monitor_tx_rate
-```
+Make sure open3d is successfully installed before performing this step, and that azure_kinect_viewer.py can be executed correctly with the video displayed, then you can generate the corresponding rgb and depth images by executing  [mkv2rgb_depth.py](./mkv2rgb_depth.py) 
 
-The last three binary digits control the number of transmitter antennas, if Bits[14,15,16]=[1,1,1] means all three transmitter antennas are used, in our project Bits[14,15,16]=[0,1,0] means only one transmitter antenna is used.
+## Get IR images from .mkv video
 
-### Customize collection time
+In this project  [mkv2ir.zip](./mkv2ir.zip) we can extract the corresponding IR image from the .mkv file and save it, just change the read and save directory of the file in the main function in transform.cpp to your own.
 
-Since the native code can only keep collecting packets, we provide a code that can collect packets and stop them automatically after n seconds (code/log_to_file_time.c).
-
-Usage is as follows:
-
-```bash
-sudo linux-80211n-csitool-supplementary/netlink/log_to_file dat_name 5
-```
-
-where the first parameter is the name of the data and the second parameter is the collection time in seconds.
-
-### Add timestamp
-
-We also provide a way to log timestamps to a txt file while collecting counts, again in code/log_to_file_time.c.
-
-Use as shown in the previous section.
-
-## CSI Data Processing
-
-To parse the data we have to use a read_bf_file file in CSI TOOL, just copy the folder linux-80211n-csitool-supplementary/matlab.
-
-The matlab parsing script is as follows(code/read_dat.m), this m-file needs to be stored in the same folder as the read_bf_file file and needs to be added to the path when running.
-
-```matlab
-clc;
-clear;
-csi_trace = read_bf_file('name.dat');
-len = length(csi_trace)
-ant_csi = zeros(30,len,3);
-for j=1:3
-  for i=1:len
-    if(isempty(csi_trace{i}))
-        break;
-    end
-    csi_entry = csi_trace{i};
-    csi = get_scaled_csi(csi_entry);
-    csi =csi(1,:,:);
-    csi1=abs(squeeze(csi).');
-    ant_csi(:,i,j)=csi1(:,j);  
-  end 
-  subplot(3,1,j);
-  plot(ant_csi(:,:,j).');
-  hold on
-end
-% To save the csi as a .csv file, uncomment the following two lines
-% dstDir = strcat(path_to_save,'.csv')
-% writematrix(ant_csi,dstDir);
-size(ant_csi);
-```
