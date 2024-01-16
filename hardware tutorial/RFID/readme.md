@@ -14,9 +14,9 @@ You can install the software by referring to the documentation on the official w
 
 https://www.impinj.com/products/readers/impinj-speedway
 
- [lmping_R420_安裝手冊.pdf](F:\迅雷下载\lmping_R420_安裝手冊.pdf) 
+ [lmping_R420_安裝手冊.pdf](./lmping_R420_install.pdf) 
 
-We also provide software installation packages: [Impinj_MultiReader_6_6_13.zip](..\..\RFID\Impinj_MultiReader_6_6_13.zip) 
+We also provide software installation packages: [Impinj_MultiReader_6_6_13.zip](./Impinj_MultiReader_6_6_13.zip) 
 
 ![image-20240115182721460](./assets/impinj.png)
 
@@ -28,7 +28,7 @@ If the installation and configuration are successful, the software can read the 
 
 Before proceeding to this step, please make sure that the above software is properly installed and that the RFID Reader is successfully connected and the corresponding Tag has available.
 
- [TagGesture.zip](..\..\RFID\TagGesture.zip) , this project is able to save the Tag value read by the RFID Reader as a CSV file, the specific content of the saved data is shown in the following figure.
+ [TagGesture.zip](./TagGesture.zip) , this project is able to save the Tag value read by the RFID Reader as a CSV file, the specific content of the saved data is shown in the following figure.
 
 ![image-20240115223540269](./assets/rfid_file.png)
 
