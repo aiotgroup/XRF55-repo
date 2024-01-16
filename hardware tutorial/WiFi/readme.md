@@ -39,7 +39,7 @@ The last three binary digits control the number of transmitter antennas, if Bits
 
 ### Customize collection time
 
-Since the native code can only keep collecting packets, we provide a code that can collect packets and stop them automatically after n seconds (code/log_to_file_time.c).
+Since the native code can only keep collecting packets, we provide a code that can collect packets and stop them automatically after n seconds (log_to_file_time.c).
 
 Usage is as follows:
 
@@ -51,7 +51,7 @@ where the first parameter is the name of the data and the second parameter is th
 
 ### Add timestamp
 
-We also provide a way to log timestamps to a txt file while collecting counts, again in code/log_to_file_time.c.
+We also provide a way to log timestamps to a txt file while collecting counts, again in log_to_file_time.c.
 
 Use as shown in the previous section.
 
@@ -59,7 +59,7 @@ Use as shown in the previous section.
 
 To parse the data we have to use a read_bf_file file in CSI TOOL, just copy the folder linux-80211n-csitool-supplementary/matlab.
 
-The matlab parsing script is as follows(code/read_dat.m), this m-file needs to be stored in the same folder as the read_bf_file file and needs to be added to the path when running.
+The matlab parsing script is as follows(read_dat.m), this m-file needs to be stored in the same folder as the read_bf_file file and needs to be added to the path when running.
 
 ```matlab
 clc;
