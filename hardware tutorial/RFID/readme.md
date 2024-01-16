@@ -36,6 +36,6 @@ In our project, we use 23 Tag, 30hz, to extract PhaseAngle (Radian) data for sub
 
 ## Visualize RFID data
 
-You can execute this script  [read_rfid.py](..\..\PycharmProjects\deep-learning-for-image-processing-master\pytorch_classification\github\XRF_dataset\read_rfid.py)  to visualize the RFID data you have collected, the visualization result is shown below.
+You can execute this script  [read_rfid.py](./read_rfid.py)  to visualize the RFID data you have collected, the visualization result is shown below.
 
 ![image-20240116180510228](./assets/rfid_vis.png)
