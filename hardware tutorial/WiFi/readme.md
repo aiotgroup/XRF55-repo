@@ -5,6 +5,8 @@
 - Recommended computer equipment: ThinkPad X201
 - Be sure to use an Intel 5300 NIC.
 
+![X201-External-Antennas](D:\系统文档\桌面\Wi-Fi Hardware Tutorial.assets\X201-External-Antennas.jpg)
+
 ## Setup Linux 802.11n CSI Tool
 
 Reference Links:https://dhalperi.github.io/linux-80211n-csitool/
@@ -34,6 +36,8 @@ sudo echo 0x4101 | sudo tee /sys/kernel/debug/ieee80211/phy0/iwlwifi/iwldvm/debu
 ```
 
 The last three binary digits control the number of transmitter antennas, if Bits[14,15,16]=[1,1,1] means all three transmitter antennas are used, in our project Bits[14,15,16]=[0,1,0] means only one transmitter antenna is used.
+
+![image](F:\迅雷下载\image.png)
 
 ### Customize collection time
 
@@ -86,3 +90,6 @@ end
 size(ant_csi);
 ```
 
+The following images visualize the CSI data received by one of our RX devices from volunteers performing the "carrying weight" action.
+
+![image-20240116173547980](D:\系统文档\桌面\Wi-Fi Hardware Tutorial.assets\image-20240116173547980.png)
