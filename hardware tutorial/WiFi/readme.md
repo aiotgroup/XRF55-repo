@@ -90,4 +90,4 @@ size(ant_csi);
 
 The following images visualize the CSI data received by one of our RX devices from volunteers performing the "carrying weight" action.
 
-![image-20240116173547980](.\assets\wifi-csi.png)
+![image-20240116173547980](./assets/wifi-csi.png)
