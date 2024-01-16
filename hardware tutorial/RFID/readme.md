@@ -6,7 +6,7 @@
 - UHF RFID Tag
 - RFMax S9028PCLJ RFID Antenna
 
-<img src="./assets/tag.jpg" style="zoom:24%;" /><img src="./assets/pad.webp" style="zoom:25%;" /><img src="./assets/RFID_device.webp" style="zoom:25%;" />
+<img src="./assets/tag.jpg" width="50%" height="50%" /><img src="./assets/pad.webp" style="zoom:25;" /><img src="./assets/RFID_device.webp" style="zoom:25;" />
 
 ## Setup MultiReader for Speedway RFID
 
