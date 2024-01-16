@@ -14,7 +14,7 @@ You can install the software by referring to the documentation on the official w
 
 https://www.impinj.com/products/readers/impinj-speedway
 
- [lmping_R420_安裝手冊.pdf](./lmping_R420_install.pdf) 
+ [lmping_R420_install.pdf](./lmping_R420_install.pdf) 
 
 We also provide software installation packages: [Impinj_MultiReader_6_6_13.zip](./Impinj_MultiReader_6_6_13.zip) 
 
