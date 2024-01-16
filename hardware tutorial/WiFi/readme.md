@@ -5,7 +5,7 @@
 - Recommended computer equipment: ThinkPad X201
 - Be sure to use an Intel 5300 NIC.
 
-![X201-External-Antennas](.\assets\X201-External-Antennas.jpg)
+![X201-External-Antennas](./assets/X201-External-Antennas.jpg)
 
 ## Setup Linux 802.11n CSI Tool
 
