@@ -37,7 +37,7 @@ https://www.ti.com/video/series/mmwave-training-series.html
 #### Step 2: Parameter Configuration for mmWave Studio
 
 In our project, we use set the parameters as follow: 
-[param_configuration.lua](\assets\param_configuration.lua)
+[param_configuration.lua](./assets/param_configuration.lua)
 
 ## Data Preprocessing
 
@@ -53,7 +53,7 @@ The mmWave data we provided in the link are the transformed version of Raw ADC d
 frame * tx * sample_num * rx_num * chirp_num
 
 Code for interpreting raw data:
-[readDCA1000_6843.m](\assets\readDCA1000_6843.m)
+[readDCA1000_6843.m](./assets/readDCA1000_6843.m)
 
 ```
 data = readDCA1000_6843(read_path, numADCSamples);
