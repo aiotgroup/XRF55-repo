@@ -15,8 +15,8 @@ Radio frequency~(RF) devices such as Wi-Fi transceivers, radio frequency identif
 - Clone this repo:
 
 ```bash
-git clone https://github.com/WhisperYi/XRF_dataset.git
-cd XRF_dataset
+git clone https://github.com/aiotgroup/XRF55-repo.git
+cd XRF55-repo
 ```
 
 - Install [PyTorch](http://pytorch.org) and other dependencies (e.g., torchvision, torch, numpy).
