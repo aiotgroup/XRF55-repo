@@ -108,8 +108,8 @@ if __name__ == '__main__':
                         action='store_true',
                         default=True,
                         help='enable align depth image to color')
-    parser.add_argument('--times', type=int, help='收两次还是收四次', default=2)
-    parser.add_argument('--savepath', type=str, help='要保存mkv的路径，包括时间戳 eg:./mkv_record/', default="F:/mkv_record/")
+    parser.add_argument('--times', type=int, default=2)
+    parser.add_argument('--savepath', type=str, help='path to save mkv eg:./mkv_record/', default="F:/mkv_record/")
     parser.add_argument('--target_time', type=str, help='when time to start eg:2022-09-30 14:24:00', default='2022-09-30 14:24:00')
     args = parser.parse_args()
 
@@ -139,8 +139,6 @@ if __name__ == '__main__':
         over_time = target_time + datetime.timedelta(seconds=128) - tiqian_time
     else:
         over_time = target_time + datetime.timedelta(seconds=246) - tiqian_time
-        # over_time = target_time + datetime.timedelta(seconds=246) - tiqian_time
-    # 当前日期时间
     print("Start time at:", target_time)
     print("Over time at:", over_time)
     dt = datetime.datetime.now()
