@@ -74,7 +74,7 @@ if __name__ == "__main__":
         correct_test = []
         testacc = []
         for m in range(args.model_num):
-            # 加载模型参数
+            # load models param
             models[m].load_state_dict(torch.load(f'./result/params/{model_name}/model{m}_epoch{epoch}.pth'))
             models[m] = models[m].cuda()
             models[m].eval()
