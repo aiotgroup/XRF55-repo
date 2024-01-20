@@ -2,7 +2,7 @@
 
 We have listed tutorials for all the hardware used in our project, including WiFi, RFID, mmWave and Kinect, which you can deploy on your own platform with the tutorials!
 
-In addition we used two pc devices together to control the synchronized acquisition of these four devices, one for RFID and Kinect acquisition and the other for mmWave acquisition.
+We used one PC for RFID and Kinect acquisition, and one other  PC for mmWave acquisition.
 
 Time synchronization between two pc devices and four WiFi devices (1TX, 3RX) via ntp to synchronize acquisition.
 
