@@ -22,7 +22,7 @@ Time synchronization between two pc devices and four WiFi devices (1TX, 3RX) via
 -  [soundbee.py](./assets/pc1/soundbee.py) This file is simply used for the script that we use to give the volunteers the sound signals for the beginning and end of the acquisition, and again it will be repeated 20 times.
 -  [azure_kinect_recorder.py](./assets/pc1/azure_kinect_recorder.py) The specific use of this file can be found in the Kinect Tutorial for controlling the opening and closing of the Kinect device.
 -  [config.txt](./assets/pc1/config.txt) This file is used for parameter configuration, where the first line is the volunteer number, the second line is the action number, the third line can be discarded, the fourth line is the acquisition start time, and the fifth line is the action index.
--  [run.py](./assets/pc1/run.py) This file is the collection of pc1 entry script, the script is used to control the operation of all other scripts, if you want to use the script is recommended to modify according to your project
+-  [run.py](./assets/pc1/run.py) This file is the collection of pc1 entry script, the script is used to control the operation of all other scripts, if you want to use the script is recommended to modify according to your project.
 
 ## PC2(mmWave)
 
