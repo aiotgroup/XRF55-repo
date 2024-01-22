@@ -91,3 +91,5 @@ size(ant_csi);
 The following images visualize the CSI data received by one of our RX devices from volunteers performing the "carrying weight" action.
 
 ![image-20240116173547980](./assets/wifi-csi.png)
+
+Note: If you want to download the raw data of the WiFi dataset, please note that some of the files with prefixes 04, 07, 12 are saved in .mat format, which is normal, due to the difference in our pre-processing. You can use the load method in matlab to read them, and their contents are the same as the .dat files.
