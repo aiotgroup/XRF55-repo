@@ -35,32 +35,30 @@ https://www.ti.com/video/series/mmwave-training-series.html
 #### Step 1: Prepare All Software and Hardware
 
 #### Step 2: Parameter Configuration for mmWave Studio
-
-In our project, we use set the parameters as follow: 
+- In our project, we use set the parameters as follow: 
 [param_configuration.lua](./assets/param_configuration.lua)
 
 ## Data Preprocessing
-
-#### Interpret Raw ADC data captured from mmWave Studio
-
-Offical Documentation:\
-https://www.ti.com/lit/pdf/swra581?keyMatch=MMWAVE%20SENSOR%20RAW%20DATA%20CAPTURE%20USING%20THE%20DCA1000%20BOARD%20AND%20MMWAVE%20STUDIO
-
-In our project: 
-The mmWave data we provided in the link are the transformed version of Raw ADC data, and have already been segmented.
+In our project, the mmWave data we provided in the link are the transformed version of Raw ADC data which have already been segmented.
 
 **Data Dimensions:** 
 frame * tx * sample_num * rx_num * chirp_num
 
-Code for interpreting raw data:
-[readDCA1000_6843.m](./assets/readDCA1000_6843.m)
 
-```
-data = readDCA1000_6843(read_path, numADCSamples);
-data = reshape(data,rx_num,sample_num,tx_num,chirp_num,data_framenum);
-data = permute(data,[5,3,2,1,4]);    
+#### Step 1: Interpret Raw ADC data captured from mmWave Studio
 
-... Here we omit the code for data segementation ...
-```
+- Offical Documentation:\
+https://www.ti.com/lit/pdf/swra581?keyMatch=MMWAVE%20SENSOR%20RAW%20DATA%20CAPTURE%20USING%20THE%20DCA1000%20BOARD%20AND%20MMWAVE%20STUDIO
 
+
+   Code for interpreting raw data before segmentation:
+   [readDCA1000_6843.m](./assets/readDCA1000_6843.m)
+
+    ```
+    data = readDCA1000_6843(read_path, numADCSamples);
+    data = reshape(data,rx_num,sample_num,tx_num,chirp_num,data_framenum);
+    rawdata = permute(data,[5,3,2,1,4]);    
+
+    ... Here we omit code for segmentation ...
+    ```
 
