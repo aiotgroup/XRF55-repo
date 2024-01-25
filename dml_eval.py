@@ -7,7 +7,7 @@ import torch.nn as nn
 import torch.utils.data as Data
 import torch.nn.functional as F
 from torch.autograd import Variable
-
+import gdown
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
@@ -36,6 +36,22 @@ def write_to_file(conf_matrix, path):
     df = pd.DataFrame(conf_matrix_m)
     df.to_csv(path + '.csv')
 
+def check_weight_file(path):
+    url_mmwave = 'https://drive.google.com/file/d/1vJou1BnwCreCkqu-10mdg45tqARdGeU5/view?usp=sharing'
+    url_rfid = 'https://drive.google.com/file/d/1fnPpXoCGjTs17Ia_4NuitRODybB_Xhwc/view?usp=sharing'
+    url_wifi = 'https://drive.google.com/file/d/1RM2wEE3AjOv0aYKnOcMJMdx7PmQp3XNM/view?usp=sharing'
+    if not (os.path.exists(os.path.join(path, 'mmwave_params.pth'))):
+        gdown.download(url_mmwave, os.path.join(path, 'mmwave_params.pth'), quiet=False, fuzzy=True)
+    else:
+        print('mmwave weights file already exists.')
+    if not (os.path.exists(os.path.join(path, 'rfid_params.pth'))):
+        gdown.download(url_rfid, os.path.join(path, 'rfid_params.pth'), quiet=False, fuzzy=True)
+    else:
+        print('rfid weights file already exists.')
+    if not (os.path.exists(os.path.join(path, 'wifi_params.pth'))):
+        gdown.download(url_wifi, os.path.join(path, 'wifi_params.pth'), quiet=False, fuzzy=True)
+    else:
+        print('wifi weights file already exists.')
 
 if __name__ == "__main__":
     model_name = "train_dml"
