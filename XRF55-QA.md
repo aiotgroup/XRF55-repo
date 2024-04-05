@@ -1,8 +1,8 @@
 # XRF55 Q&A
 
-**We'll be updating this document with questions and answers in real time!**
+**We'll be updating this document with questions and answers!**
 
-**If you have any questions outside of the documentation, please submit an issue or send us an email and we will respond promptly!**
+**If you have any questions outside of the documentation, please submit an issue or send us an email and we will respond promptly.**
 
 ------
 
