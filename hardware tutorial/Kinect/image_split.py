@@ -50,7 +50,7 @@ def main():
     timestamp_file = 'F:/mkv_record/XX_XX.txt'  # mkv corresponding timestamp file
     output_directory = 'F:/mkv_output'  # Split image save directory
     timestamps = process_timestamp_file(timestamp_file)
-    file_name = timestamp_file.split('\\')[-1].split('.')[0]
+    file_name = timestamp_file.split('/')[-1].split('.')[0]
     start_time = find_start_time(timestamps)
     if start_time is None:
         print("Could not find a timestamp on the minute mark in your file.")
