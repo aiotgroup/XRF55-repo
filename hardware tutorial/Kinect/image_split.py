@@ -18,9 +18,9 @@ def find_start_time(timestamps):
 
 
 def move_image(image_path, start_time, end_time, output_directory, file_name, i):
-    output_rgb = os.path.join(output_directory, 'color', f"{file_name}_{i:02}")
-    output_depth = os.path.join(output_directory, 'depth', f"{file_name}_{i:02}")
-    output_ir = os.path.join(output_directory, 'ir', f"{file_name}_{i:02}")
+    output_rgb = os.path.join(output_directory, 'color', file_name[:2], f"{file_name}_{i:02}")
+    output_depth = os.path.join(output_directory, 'depth', file_name[:2], f"{file_name}_{i:02}")
+    output_ir = os.path.join(output_directory, 'ir', file_name[:2], f"{file_name}_{i:02}")
     if not os.path.exists(output_rgb):
         os.makedirs(output_rgb)
         os.makedirs(output_depth)
@@ -46,11 +46,11 @@ def split_video(image_path, start_time, output_directory, file_name):
 
 
 def main():
-    image_path = 'F:/mkv_record/XX_XX/'  # The rgb, depth and ir directory generated in the previous step
-    timestamp_file = 'F:/mkv_record/XX_XX.txt'  # mkv corresponding timestamp file
-    output_directory = 'F:/mkv_output'  # Split image save directory
+    image_path = 'F:\\mkv_record\\XX_XX\\'  # The rgb, depth and ir directory generated in the previous step
+    timestamp_file = 'F:\\mkv_record\\XX_XX.txt'  # mkv corresponding timestamp file
+    output_directory = 'F:\\mkv_output'  # Split image save directory
     timestamps = process_timestamp_file(timestamp_file)
-    file_name = timestamp_file.split('/')[-1].split('.')[0]
+    file_name = timestamp_file.split('\\')[-1].split('.')[0]
     start_time = find_start_time(timestamps)
     if start_time is None:
         print("Could not find a timestamp on the minute mark in your file.")
