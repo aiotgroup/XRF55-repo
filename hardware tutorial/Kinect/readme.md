@@ -41,4 +41,4 @@ In this project  [mkv2ir.zip](./mkv2ir.zip) we can extract the corresponding IR 
 
 ## Split RGB, Depth and IR images
 
-As mentioned in [Notice](../readme.md), the Kinect mkv video is not segmented and rearranged, and after getting the RGB, Depth, and IR images based on the first two parts, you need to execute [image_split.py](. /image_split.py) script to split the image, just modify the corresponding input and output file directories.
+As mentioned in [Notes](../readme.md), the Kinect mkv video is not segmented and rearranged, and after getting the RGB, Depth, and IR images based on the first two parts, you need to execute [image_split.py](./image_split.py) script to split the image, just modify the corresponding input and output file directories.
