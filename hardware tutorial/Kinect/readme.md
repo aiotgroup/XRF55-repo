@@ -27,7 +27,7 @@ In our project, we use the SDK to get the RGB, Depth and IR information of the c
 1. You can use the officially provided recording process, the main environment is C++. https://learn.microsoft.com/en-us/azure/kinect-dk/record-sensor-streams-file
 2. We also recommend using the recording solution given by open3d, tutorial link: https://www.open3d.org/docs/release/tutorial/sensor/azure_kinect.html
 
-We use the second method to record, in their project, `azure_kinect_mkv_reader.py` only records .mkv video; `azure_kinect_viewer.py` is only used for displaying; `azure_kinect_mkv_reader.py` not only saves .mkv video, but also saves rgb and depth images, but it's not recommended, as the processing time is too slow, far from the 25 fps requirement.
+We use the second method to record, in their project, `azure_kinect_mkv_reader.py` only records .mkv video; `azure_kinect_viewer.py` is only used for displaying; `azure_kinect_mkv_reader.py` not only saves .mkv video, but also saves rgb and depth images, but it's not recommended, as the processing time is too slow, far from the 30 fps requirement.
 
 ![image-20240116173431240](./assets/kinect_view.png)
 
