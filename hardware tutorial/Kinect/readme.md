@@ -45,4 +45,4 @@ As mentioned in [Notes](../readme.md), the Kinect .mkv video is not segmented an
 
 ## Rearrange RGB, Depth and IR images
 
-After splitting all the data of one volunteer, there should be 58 * 20 = 1160 samples, after [image_rearrange.py](. /image_rearrange.py) script to rearrange the samples, you'll end up with 55 * 20 = 1100 samples as network input.
+After splitting all the data of one volunteer, there should be 58 * 20 = 1160 samples, after [image_rearrange.py](./image_rearrange.py) script to rearrange the samples, you'll end up with 55 * 20 = 1100 samples as network input.
