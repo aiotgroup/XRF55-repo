@@ -37,4 +37,4 @@ Make sure open3d is successfully installed before performing this step, and that
 
 ## Get IR images from .mkv video
 
-In this project  [mkv2ir.zip](./mkv2ir.zip) we can extract the corresponding IR image from the .mkv file and save it, just change the read and save directory of the file in the main function in transform.cpp to your own.
+To extract IR images, we use a C++ project [mkv2ir.zip](./mkv2ir.zip). You can execute the main function of **transoform.cpp**. Only the directories to read and save the file need to be changed.
