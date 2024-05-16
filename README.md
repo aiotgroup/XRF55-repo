@@ -109,3 +109,18 @@ python dml_eval.py
 └─word2vec
         bert_new_sentence_large_uncased.npy
 ```
+
+## Citations
+
+If you find our works useful in your research, please consider citing:
+```BibTeX
+@article{wang2024xrf55,
+  title={XRF55: A Radio Frequency Dataset for Human Indoor Action Analysis},
+  author={Wang, Fei and Lv, Yizhe and Zhu, Mengdie and Ding, Han and Han, Jinsong},
+  journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies},
+  issue={1},
+  volume={8},
+  year={2024},
+  publisher={ACM New York, NY, USA}
+}
+```
