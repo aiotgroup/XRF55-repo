@@ -36,16 +36,3 @@ Other files:
 - [mydatacollection.m](./assets/pc2/mydatacollection.m) This file includes a function which can send commands to mmwave studio to let it start collecting data. Remember to set the path of RtttNetClientAPI.dll. 
 
 - [Init_RSTD_Connection.m](./assets/pc2/Init_RSTD_Connection.m) This script establishes the connection between mmWaveStudio software and Matlab software.
-
-
-## Notes:
-For time saving purpose, there are some actions which are not collected according to action class. 
-
-RFID, WiFi, mmWave have already been rearranged. However, the Kinect files are not segmented and have not been rearranged. Here are the tips.
-
-Type 1: Actions that are collected in pairs.
-![pair](./assets/re_arrange_pair.png)
-
-
-Type 2: Actions that need time to reset.
-![even](./assets/re_arrange_even.png)
