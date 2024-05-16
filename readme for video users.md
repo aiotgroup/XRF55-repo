@@ -12,11 +12,11 @@ Type 2: Actions that need time to reset (Wearing Hat, Put on Clothing, Fall on t
 
 So after extracting the RGB, Depth and IR images from the .mkv, you need to do the next two steps:
 
-### 1.Split RGB, Depth and IR images
+### 1. Split RGB, Depth and IR images
 
-As mentioned in Notes, the Kinect .mkv video is not segmented and rearranged, and after getting the RGB, Depth, and IR images based on the first two steps, you need to execute [image_split.py](./hardware%20tutorial/Kinect/image_split.py) script to split the image, just modify the corresponding input and output file directories.
+As mentioned in Notes, the Kinect .mkv video is not segmented and rearranged, you need to execute [image_split.py](./hardware%20tutorial/Kinect/image_split.py) script to split the image, just modify the corresponding input and output file paths.
 
-### 2.Rearrange RGB, Depth and IR images
+### 2. Rearrange RGB, Depth and IR images
 
-After splitting all the data of one volunteer, there should be 58 * 20 = 1160 samples, after [image_rearrange.py](./hardware%20tutorial/Kinect/image_rearrange.py) script to rearrange the samples, you'll end up with 55 * 20 = 1100 samples as network input.
+After splitting all the data of one volunteer, there should be 58 * 20 = 1160 samples, after [image_rearrange.py](./hardware%20tutorial/Kinect/image_rearrange.py) script to rearrange the samples, you'll end up with 55 * 20 = 1100 samples.
 
