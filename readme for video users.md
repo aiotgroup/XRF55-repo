@@ -10,7 +10,7 @@ Type 1: Actions that are collected in pairs (Throwing something & Picking, Drink
 Type 2: Actions that need time to reset (Wearing Hat, Put on Clothing, Fall on the Floor).
 ![even](./hardware%20tutorial/assets/re_arrange_even.png)
 
-So after taking the .mkv and extracting the RGB, Depth and IR images, you need to do the next two steps:
+So after extracting the RGB, Depth and IR images from the .mkv, you need to do the next two steps:
 
 ### 1.Split RGB, Depth and IR images
 
