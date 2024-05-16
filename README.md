@@ -1,6 +1,6 @@
 # XRF55: A Radio Frequency Dataset for Human Indoor Action Analysis
 
-The repository is a more detailed introduction to the paper, containing **code**, **hardware tutorials**, and **instructions for downloading the video dataset**. If you have any questions about the above, please submit an issue and we will try to answer them as promptly as possible!
+This repository is a more detailed introduction to XRF55, containing **code**, **hardware tutorials**, and **instructions for downloading the video dataset**. If you have any questions about the above, please submit an issue and we will try to answer them as promptly as possible!
 
 ## If you want to understand or learn how our devices collect data:
 
