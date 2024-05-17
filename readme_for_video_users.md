@@ -14,9 +14,9 @@ Make sure open3d is successfully installed before excuting this step. Then execu
 
 ## Get IR images from .mkv video
 
-To extract IR images, we use a C++ project [mkv2ir.zip](.//hardware%20tutorial/Kinect/mkv2ir.zip). You can execute the main function of `transoform.cpp`. Simply change the paths to the read and save files.
+To extract IR images, we use a C++ project [mkv2ir.zip](./hardware%20tutorial/Kinect/mkv2ir.zip). You can execute the main function of `transoform.cpp`. Simply change the paths to the read and save files.
 
-## Notes:
+## Split video into 5s clips:
 
 For time saving purpose, there are some actions which are not collected according to action class. 
 
@@ -30,7 +30,7 @@ Type 2: Actions that need time to reset (Wearing Hat, Put on Clothing, Fall on t
 
 So after extracting the RGB, Depth and IR images from the .mkv, you need to do the next two steps:
 
-### 1. Split RGB, Depth and IR images
+### 1. Split RGB, Depth and IR images into 5s clips
 
 As mentioned in Notes, the Kinect .mkv video is not segmented and rearranged, you need to execute [image_split.py](./hardware%20tutorial/Kinect/image_split.py) script to split the image, just modify the corresponding input and output file paths.
 
