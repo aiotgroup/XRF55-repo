@@ -1,9 +1,10 @@
 When you have downloaded our XRF55 video dataset, you will get 19 × 58 .mkv videos and corresponding .txt timestamp files. The file naming format is **volunteer_index-action_index**.
 
-> **19** is the number of volunteers due to some volunteers not willing to disclose their videos
-> (Index of available volunteers in Scene1: 03, 04, 05, 07, 08, 11, 19, 21, 22, 24; Scene2: 05, 24, 31; Scene3: 06, 07; Scene4:03, 04, 13).
+> **19** is the number of volunteers due to some volunteers not willing to disclose their videos.
 > 
-> **58** is a action sample collected from each volunteer (XX-01~XX-58).
+> (Index of available volunteers in Scene1: 03, 04, 05, 07, 08, 11, 19, 21, 22, 24; Scene2: 05, 24, 31; Scene3: 06, 07; Scene4:03, 04, 13)
+> 
+> **58** is the number of action samples collected from each volunteer (XX-01~XX-58).
 
 After you have checked the video data, if you need to extract the RGB, Depth and IR images from it, you need to execute the following two steps:
 
