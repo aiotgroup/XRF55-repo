@@ -16,7 +16,7 @@ Make sure open3d is successfully installed before excuting this step. Then execu
 
 To extract IR images, we use a C++ project [mkv2ir.zip](./hardware%20tutorial/Kinect/mkv2ir.zip). You can execute the main function of `transoform.cpp`. Simply change the paths to the read and save files.
 
-## Split video into 5s clips:
+## Split images into 5s clips:
 
 For time saving purpose, there are some actions which are not collected according to action class. 
 
