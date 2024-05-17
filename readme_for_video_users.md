@@ -10,7 +10,7 @@ After you have checked the video data, if you need to extract the RGB, Depth and
 
 ## Get RGB and Depth images from .mkv video
 
-Make sure open3d is successfully installed before performing this step, and that `azure_kinect_viewer.py` can be executed correctly with the video displayed. Then execute [mkv2rgb_depth.py](. /hardware%20tutorial/Kinect/mkv2rgb_depth.py) to generate the corresponding rgb and depth images.
+Make sure open3d is successfully installed before performing this step, and that `azure_kinect_viewer.py` can be executed correctly with the video displayed. Then execute [mkv2rgb_depth.py](./hardware%20tutorial/Kinect/mkv2rgb_depth.py) to generate the corresponding rgb and depth images.
 
 ## Get IR images from .mkv video
 
