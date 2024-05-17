@@ -2,7 +2,7 @@ When you have downloaded our XRF55 video dataset, you will get 19 × 58 .mkv vid
 
 > **19** is the number of volunteer data due to some volunteers not willing to disclose their videos.
 > 
-> (Index of available volunteers in Scene1: 03, 04, 05, 07, 08, 11, 19, 21, 22, 24; Scene2: 05, 24, 31; Scene3: 06, 07; Scene4:03, 04, 13)
+> (Index of available volunteers in Scene1: 03, 04, 05, 07, 08, 11, 19, 21, 22, 24; Scene2: 05, 24, 31; Scene3: 06, 07; Scene4: 03, 04, 13)
 > 
 > **58** is the number of action samples collected from each volunteer (XX-01~XX-58).
 
