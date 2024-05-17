@@ -32,7 +32,7 @@ So after extracting the RGB, Depth and IR images from the .mkv, you need to do t
 
 ### 1. Split RGB, Depth and IR images into 5s clips
 
-As mentioned in Notes, the Kinect .mkv video is not segmented and rearranged, you need to execute [image_split.py](./hardware%20tutorial/Kinect/image_split.py) script to split the image, just modify the corresponding input and output file paths.
+As mentioned above, the Kinect .mkv video is not segmented and rearranged, you need to execute [image_split.py](./hardware%20tutorial/Kinect/image_split.py) script to split the image, just modify the corresponding input and output file paths.
 
 ### 2. Rearrange RGB, Depth and IR images
 
