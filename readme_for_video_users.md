@@ -14,7 +14,7 @@ Make sure open3d is successfully installed before performing this step, and that
 
 ## Get IR images from .mkv video
 
-To extract IR images, we use a C++ project [mkv2ir.zip](.//hardware%20tutorial/Kinect/mkv2ir.zip). You can execute the main function of **transoform.cpp**. Simply change the paths to the read and save files.
+To extract IR images, we use a C++ project [mkv2ir.zip](.//hardware%20tutorial/Kinect/mkv2ir.zip). You can execute the main function of `transoform.cpp`. Simply change the paths to the read and save files.
 
 ## Notes:
 
