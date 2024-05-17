@@ -8,7 +8,7 @@ This repository is a more detailed introduction to XRF55, containing **code**, *
 
 ## If you want to download our video dataset but have questions about it:
 
-[readme for video users.md](./readme%20for%20video%20users.md) will help you to process the downloaded XRF55 video dataset correctly!
+[readme_for_video_users.md](./readme%20for%20video%20users.md) will help you to process the downloaded XRF55 video dataset correctly!
 
 ## If you want to reproduce our experiments:
 
