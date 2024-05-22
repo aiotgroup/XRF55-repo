@@ -2,6 +2,8 @@
 
 This repository is a more detailed introduction to XRF55, containing **code**, **hardware tutorials**, and **instructions for downloading the video dataset**. If you have any questions about the above, please submit an issue and we will try to answer them as promptly as possible!
 
+Our project page: [https://aiotgroup.github.io/XRF55](https://aiotgroup.github.io/XRF55/)
+
 ## If you want to understand or learn how our devices collect data:
 
 [Click here](https://github.com/aiotgroup/XRF55-repo/tree/main/hardware%20tutorial) for an explanation of how the WiFi, mmWave, RFID, and Kinect devices are initialized, data collected, and processed for the device.
