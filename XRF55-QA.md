@@ -8,7 +8,7 @@
 
 #### Q1
 
-*Wi-Fi data dimensions from 1000 × 1 × 3 × 3 × 30 to 1000 × 270, does data[:, 0:30] represent the 30 subcarriers of the received signal at the first antenna of the first Rx, with data[:, 30:60] being the second antenna of the first Rx, and so forth?*
+**Wi-Fi data dimensions from 1000 × 1 × 3 × 3 × 30 to 1000 × 270, does data[:, 0:30] represent the 30 subcarriers of the received signal at the first antenna of the first Rx, with data[:, 30:60] being the second antenna of the first Rx, and so forth?**
 
 Yes, the first 90 are all the subcarriers of the first receiving device, where the first 30 are the subcarriers of the first receiving antenna, and so on. [2024-4-5 23:03:33]
 
