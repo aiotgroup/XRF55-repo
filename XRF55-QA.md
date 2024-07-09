@@ -22,6 +22,12 @@ Some of wifi raw datas with prefixes 04, 07, 12 are saved in .mat format, which 
 
 Same csi, you can use the load method in matlab to read them, and their contents are the same as the .dat files. [2024-7-9 17:12:19]
 
+#### Q3
+
+**Why rfid data is downsampled from 150x23 to 148x23 in the time dimension?**
+
+The rfid receipts are not stable, theoretically each sample receives 150 pieces of data. In reality it will be one or two less, so downsample to 148. [2024-7-9 20:43:44]
+
 ------
 
 To be updated
