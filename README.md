@@ -41,7 +41,7 @@ cd XRF55-repo
   - Download the `dataset.zip`, unzip it and move it to `./dataset/Raw_dataset/`
 
 - Split train/test data:
-
+(Used only for split train and test sets, you can rewrite the script to meet different needs)
 ```
 python split_train_test.py 
 ```
