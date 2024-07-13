@@ -40,7 +40,7 @@ def split_train_test_new(root_ns="./dataset/Raw_dataset/", dst_wr="./dataset/XRF
         filename = file.split(".")[0]  # act name
         fileidx = filename.split("_")[0]  # act idx
         actidx = int(filename.split("_")[2])
-        if actidx <= zoo:
+        if actidx <= zoo: # out of 20 samples of each action for each person, the first "zoo" are selected as the training set and the rest as the test set.
             shutil.copy(root_ns + 'RFID/' + filename + ".npy", dst_train_rfid + filename + ".npy")
             shutil.copy(root_ns + 'WiFi/' + filename + ".npy", dst_train_wifi + filename + ".npy")
             shutil.copy(root_ns + "mmWave/" + filename + ".npy",dst_train_mmwave + filename + ".npy")
