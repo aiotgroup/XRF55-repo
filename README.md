@@ -10,7 +10,7 @@ Our project page: [https://aiotgroup.github.io/XRF55](https://aiotgroup.github.i
 
 ## If you want to download our video dataset but have questions about it:
 
-[readme_for_video_users.md](./readme%20for%20video%20users.md) will help you to process the downloaded XRF55 video dataset correctly!
+[readme_for_video_users.md](https://github.com/aiotgroup/XRF55-repo/blob/main/readme_for_video_users.md) will help you to process the downloaded XRF55 video dataset correctly!
 
 ## If you want to reproduce our experiments:
 
