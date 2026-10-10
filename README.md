@@ -7,12 +7,12 @@
 | mmWave, WiFi, and RFID | [SDP](https://www.sdp8.org/Dataset?id=705e08e7-637e-49a1-aff1-b2f9644467ae) | [Part 1](https://www.kaggle.com/datasets/whisperyi/xrf55-2), [Part 2](https://www.kaggle.com/datasets/whisperyi/xrf55-2) | Part 1 includes action samples from 3 individuals in scenes 2, 3, and 4, and 11 individuals in scene 1 (92.29 GB). Part 2 includes action samples from 19 individuals in scene 1 (92.29 GB). |
 | WiFi and RFID raw data | - | [Kaggle](https://www.kaggle.com/datasets/xrfdataset/xrf55-rawdata) | 46.06 GB. |
 | mmWave raw dataset | - | - | The previous network-disk link has expired and is temporarily unavailable. |
-| mmWave RA, RD, and AD maps | [SDP](https://www.sdp8.org/Dataset?id=705e08e7-637e-49a1-aff1-b2f9644467ae) | - | Range-angle (RA), range-Doppler (RD), and angle-Doppler (AD) maps are available on SDP. |
+| mmWave RA, RD, and AD maps | [SDP](https://www.sdp8.org/Dataset?id=705e08e7-637e-49a1-aff1-b2f9644467ae) | - | Range-angle (RA), range-Doppler (RD), and angle-Doppler (AD) maps for scenes 1–4. Scene 1: 1.2 TiB; scenes 2–4: 120.9 GiB each. Includes `mmWave_RA_RE.py`. |
 | Video RGB | - | [Kaggle](https://www.kaggle.com/datasets/airslab2020/xrf55-rgb-depth-ir) | RGB videos from 19 participants who agreed to public release, 1280x720, downsampled to 15 fps, 43.36 GB. |
 | Video Depth | - | [Part 1](https://www.kaggle.com/datasets/airslab2020/xrf55-depth-scene1), [Part 2](https://www.kaggle.com/datasets/airslab2020/xrf55-depth-scenes2-4) | Part 1 contains scene 1 (174.74 GB). Part 2 contains scenes 2, 3, and 4 (42.5 GB). Downsampled to 15 fps, 512x512. |
 | Video IR | - | [Part 1](https://www.kaggle.com/datasets/airslab2020/xrf55-ir-scene1-part1), [Part 2](https://www.kaggle.com/datasets/airslab2020/xrf55-ir-scene1-part2-scenes2-4) | Part 1 contains infrared clips from scene 1 subjects 01 through 19 (189.1 GB). Part 2 contains scene 1 subjects 20 through 30 and all subjects in scenes 2 through 4 (193.37 GB). Downsampled to 15 fps, 512x512. |
 | 2D pose, 3D pose, and human mesh | - | - | Processing is in progress and will be uploaded after completion. |
-| mmWave point cloud | [SDP](https://www.sdp8.org/Dataset?id=705e08e7-637e-49a1-aff1-b2f9644467ae) | - | Available on SDP. |
+| mmWave point cloud | [SDP](https://www.sdp8.org/Dataset?id=705e08e7-637e-49a1-aff1-b2f9644467ae) | - | Point clouds for scenes 1 and 2. Scene 1: 13.7 GiB; scene 2: 1.3 GiB. Includes `point_clouds_generation.py`. |
 
 ## Action Classes
 
